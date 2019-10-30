@@ -30,6 +30,9 @@
       <img id="jelly-thumb" src="targets/video-target.jpg">
       <video id="jelly-video" autoplay muted crossorigin="anonymous" loop="true" src="jellyfish-video.mp4">
       </video>
+      <a-assets>
+        <img id="text" src="img.png">
+      </a-assets>
     </a-assets>
 
     <a-camera position="0 4 10" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
@@ -48,7 +51,9 @@
     <!-- Note: "name:" must be set to the name of the image target uploaded to the 8th Wall Console -->
     <a-entity xrextras-named-image-target="name: ROCKEFELLER_large">
       <!-- Add a child entity that can be rotated independently of the image target. -->
-      <a-entity xrextras-one-finger-rotate gltf-model="#jelly-glb"></a-entity>
+      <!-- <a-entity xrextras-one-finger-rotate gltf-model="#jelly-glb"></a-entity> -->
+      <a-image src="#text"></a-image>
+
     </a-entity>
 
   </a-scene>
